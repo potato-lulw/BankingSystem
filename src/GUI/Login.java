@@ -88,11 +88,11 @@ public class Login {
 			@SuppressWarnings("deprecation")
 			public void actionPerformed(ActionEvent e) {
 				String user,pass;
-				textField.setText("admin");
-				user="admin";
+				textField.setText("Admin");
+				user="Admin";
 				//user=textField.getText();
 				pass=textField_1.getText();
-				if((user.equals("admin")&&(pass.equals("admin"))))
+				if((user.equals("Admin")&&(pass.equals("123"))))
 						{
 							JOptionPane.showMessageDialog(frame.getComponent(0), "Login Successfully");
 							frame.setVisible(false);

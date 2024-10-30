@@ -41,7 +41,7 @@ public class AddAccount extends JFrame {
 				}
 				else
 				{
-					JOptionPane.showMessageDialog(getComponent(0), "Already Opened", "Warning", 0);
+					JOptionPane.showMessageDialog(getComponent(0), "The panel is already open", "Warning", 0);
 				}
 			
 				

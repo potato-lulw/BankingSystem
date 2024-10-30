@@ -35,7 +35,7 @@ public class WithdrawAcc extends JFrame implements Serializable {
 	 * Create the frame.
 	 */
 	public WithdrawAcc() {
-		setTitle("Withdraw From Account");
+		setTitle("Withdraw");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -44,7 +44,7 @@ public class WithdrawAcc extends JFrame implements Serializable {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblDepositToAccount = new JLabel("Withdraw From Account");
+		JLabel lblDepositToAccount = new JLabel("Withdraw");
 		lblDepositToAccount.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblDepositToAccount.setHorizontalAlignment(SwingConstants.CENTER);
 		lblDepositToAccount.setBounds(10, 11, 414, 36);

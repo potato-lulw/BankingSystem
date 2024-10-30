@@ -9,14 +9,13 @@ import Exceptions.InvalidAmount;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
-import java.awt.Font;
+import java.awt.*;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.io.Serializable;
 import java.awt.event.ActionEvent;
 import Data.FileIO;
-import java.awt.SystemColor;
 
 public class DepositAcc extends JFrame implements Serializable {
 
@@ -33,16 +32,16 @@ public class DepositAcc extends JFrame implements Serializable {
 	 * Create the frame.
 	 */
 	public DepositAcc() {
-		setTitle("Deposit To Account");
+		setTitle("Deposit");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
-		contentPane.setBackground(SystemColor.activeCaption);
+		contentPane.setBackground(Color.white);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblDepositToAccount = new JLabel("Deposit To Account");
+		JLabel lblDepositToAccount = new JLabel("Deposit");
 		lblDepositToAccount.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblDepositToAccount.setHorizontalAlignment(SwingConstants.CENTER);
 		lblDepositToAccount.setBounds(10, 11, 414, 36);

@@ -93,7 +93,7 @@ public class AddCurrentAccount extends JFrame {
 				{
 				if(name==null||bal<=0||trlic==null)
 				{
-					JOptionPane.showMessageDialog(getComponent(0),"Typing Mismatch!! Try Again");
+					JOptionPane.showMessageDialog(getComponent(0),"Name, Balance or Trade License No. cannot be NULL");
 					textField.setText(null);
 					textField_1.setText(null);
 					textField_2.setText(null);
@@ -108,7 +108,7 @@ public class AddCurrentAccount extends JFrame {
 					try {
 						index = FileIO.bank.addAccount(name, bal, trlic);
 					} catch (Exception e1) {
-						// TODO Auto-generated catch block
+
 						e1.printStackTrace();
 					}
 					DisplayList.arr.addElement(FileIO.bank.getAccounts()[index].toString());

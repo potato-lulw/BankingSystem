@@ -16,8 +16,8 @@ public static Bank bank=null;
 	public static void Read()
 	{
 //		Bank bank =null;
-		FileInputStream fis =null;
-		ObjectInputStream oin=null;
+		FileInputStream fis = null;
+		ObjectInputStream oin= null;
 		try {
 			fis =new FileInputStream("data");
 			oin=new ObjectInputStream(fis);

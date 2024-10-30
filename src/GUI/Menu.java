@@ -7,14 +7,12 @@ import Data.FileIO;
 
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import java.awt.Font;
-import java.awt.Image;
+import java.awt.*;
 
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.SystemColor;
 import javax.swing.ImageIcon;
 import javax.swing.Icon;
 
@@ -34,7 +32,7 @@ public class Menu extends JFrame {
 		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		setBounds(100, 100, 649, 474);
 		contentPane = new JPanel();
-		contentPane.setBackground(SystemColor.activeCaption);
+		contentPane.setBackground(Color.white);
 		contentPane.setForeground(SystemColor.activeCaption);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -123,7 +121,7 @@ public class Menu extends JFrame {
 		JButton btnExit = new JButton("Exit");
 		btnExit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				JOptionPane.showMessageDialog(getComponent(0), "Thanks For Using") ;
+				JOptionPane.showMessageDialog(getComponent(0), "Banking System : CSE Final Year") ;
 				FileIO.Write();
 				System.exit(0);
 			}
